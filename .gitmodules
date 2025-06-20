@@ -1,3 +1,9 @@
 [submodule "signoz"]
+<<<<<<< HEAD
 	path = signoz
 	url = https://github.com/SigNoz/signoz.git
+=======
+    path = signoz
+    url = https://github.com/SigNoz/signoz.git
+    
+>>>>>>> b61efc1e3dfc43d068475bc54c94b02c7cac4a10
