@@ -14,7 +14,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler
-from opentelemetry.sdk._logs.export import BatchLogProcessor
+from opentelemetry.sdk._logs.export import BatchLogRecordProcessor
 from opentelemetry.exporter.otlp.proto.grpc._log_exporter import OTLPLogExporter
 
 # -------------------- Setup Providers --------------------
@@ -36,7 +36,7 @@ metrics.set_meter_provider(MeterProvider(resource=resource, metric_readers=[read
 # Logging (OTEL to SigNoz)
 logger_provider = LoggerProvider(resource=resource)
 logger_exporter = OTLPLogExporter(endpoint="http://localhost:4317", insecure=True)
-logger_provider.add_log_processor(BatchLogProcessor(logger_exporter))
+logger_provider.add_log_record_processor(BatchLogRecordProcessor(logger_exporter))
 otel_handler = LoggingHandler(level=logging.INFO, logger_provider=logger_provider)
 logging.getLogger().addHandler(otel_handler)
 
