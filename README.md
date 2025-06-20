@@ -84,6 +84,16 @@ python app.py
 
 ## 📊 Observability Features in SigNoz
 
+## Dashboard
+
+![alt text](Dashboard.png)
+
+
+## Service
+
+![alt text](service-visible.png)
+
+
 ### 🟣 Traces
 
 - Span: `roll`
@@ -104,7 +114,9 @@ python app.py
 - Label: `roll.value`
 - Viewable via dashboard panel
 
-📷 *Paste screenshot here of the "dice.rolls" metrics dashboard*
+📷 
+
+![alt text](metrics.png)
 
 ### 🔵 Logs
 
@@ -112,7 +124,9 @@ python app.py
 - Level: `INFO`, `WARNING`, `ERROR`
 - Search: `"rolling the dice"` or `"Error occurred"`
 
-📷 *Paste screenshot here showing logs in SigNoz Logs tab*
+📷
+
+![alt text](logs.png)
 
 ### 🔴 Exceptions
 
@@ -120,7 +134,11 @@ python app.py
 - Viewable as red spans in the **Traces** tab
 - Used in computing **Error Rate %**
 
-📷 *Paste screenshot here of the error trace (e.g. /rolldice?sides=0)*
+📷 
+
+![alt text](error-signals.png)
+
+![alt text](errors-percentage.png)
 
 ---
 
@@ -133,15 +151,15 @@ python app.py
 | Bar Chart  | Logs          | Top players rolling          |
 | Apdex Score| Traces        | End-user satisfaction        |
 
-📷 *Paste full screenshot here of your final custom dashboard*
+
 
 ---
 
 ## 🧑‍💻 Author
 
 - Name: *Premchander J*
-- Student ID: *[Insert your ID here if needed]*
-- Course: INFO8985 – Database Automation
+- Student ID: *9015480*
+- Course: INFO8985 – Database Automation - Inclass Task 3
 
 ---
 
@@ -156,6 +174,4 @@ docker-compose down
 
 ---
 
-## 📬 Questions?
 
-Raise an issue or reach out to the course instructor for help.
