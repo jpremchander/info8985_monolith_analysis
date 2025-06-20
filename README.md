@@ -65,16 +65,19 @@ GET	/rolldice?sides=0	Triggers an exception (for testing errors)
 
 Dashboard:
 
-Dashboard.png
+![image](https://github.com/user-attachments/assets/e75d52ed-1abb-46a5-a794-d5887b047202)
+
 
 🟣 Traces
 Span: roll
 
-roll-spantrace-attributes.png
+![image](https://github.com/user-attachments/assets/d149ad2e-cdfa-476e-a22b-a2b600286544)
+
 
 Attributes: roll.value, player
 
-roll-spantrace-attributes-2.png
+![image](https://github.com/user-attachments/assets/fc1ffd13-40db-4716-9690-f228c1aa174e)
+
 
 Visible in Traces tab → info8985-flask-app
 
@@ -82,7 +85,8 @@ Visible in Traces tab → info8985-flask-app
 
 Custom counter: dice.rolls
 
-metrics.png
+![image](https://github.com/user-attachments/assets/b14e4a7d-49d9-4f97-ac58-773e727e94ad)
+
 
 Label: roll.value
 
@@ -91,7 +95,7 @@ Create a time series panel in Dashboard
 🔵 Logs
 Collected using OpenTelemetry’s logger
 
-logs.png
+![image](https://github.com/user-attachments/assets/a051ce5b-3ce7-438e-a063-9fc6cf977295)
 
 Level: INFO, WARNING, ERROR
 
@@ -104,9 +108,10 @@ Viewable as red spans in the Traces tab
 
 Used in computing Error Rate %
 
-error-signals.png
+![image](https://github.com/user-attachments/assets/9b6f7041-daa7-4f59-9d93-1c2a13e36311)
 
-errors-percentage.png
+![image](https://github.com/user-attachments/assets/1da3aa08-8eb1-4066-8867-edd9b2c5535f)
+
 
 📈 Example Dashboard Panels
 You can create the following:
