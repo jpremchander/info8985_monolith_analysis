@@ -45,7 +45,7 @@ pip install flask opentelemetry-sdk \
 git submodule update --init --recursive
 cd signoz/deploy/docker
 docker-compose up -d
-🧭 SigNoz UI: http://localhost:8080   https://literate-giggle-976755r5r4p7fpprw-8080.app.github.dev/home
+🧭 SigNoz UI: http://localhost:8080   
 
 Wait ~2 minutes for containers to become healthy.
 
@@ -65,7 +65,7 @@ GET	/rolldice?sides=0	Triggers an exception (for testing errors)
 
 Dashboard:
 
-![alt text](Dashboard.png)
+Dashboard.png
 
 🟣 Traces
 Span: roll
@@ -82,7 +82,7 @@ Visible in Traces tab → info8985-flask-app
 
 Custom counter: dice.rolls
 
-![alt text](metrics.png)
+metrics.png
 
 Label: roll.value
 
@@ -91,7 +91,7 @@ Create a time series panel in Dashboard
 🔵 Logs
 Collected using OpenTelemetry’s logger
 
-![alt text](logs.png)
+logs.png
 
 Level: INFO, WARNING, ERROR
 
@@ -104,9 +104,9 @@ Viewable as red spans in the Traces tab
 
 Used in computing Error Rate %
 
-![alt text](error-signals.png)
+error-signals.png
 
-![alt text](errors-percentage.png)
+errors-percentage.png
 
 📈 Example Dashboard Panels
 You can create the following:
