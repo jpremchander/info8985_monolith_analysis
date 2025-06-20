@@ -90,7 +90,13 @@ python app.py
 - Attributes: `roll.value`, `player`
 - Visible in **Traces tab → info8985-flask-app**
 
-📷 ![alt text](image.png)
+📷 
+
+![alt text](roll-spantrace-attributes.png)
+
+
+![alt text](roll-spantrace-attributes-2.png)
+
 
 ### 🟢 Metrics
 
